@@ -102,18 +102,140 @@ body{background:#030303}
 .promo-stamp{display:none}
 .footgrid{grid-template-columns:1fr 1fr;gap:16px}
 }
+
+/* Ajustes de composição: proporções e hierarquia alinhadas à referência */
+:root{--bg:#030303;--panel:#080808;--red:#ed101c;--red2:#b8000c;--white:#f5f5f5;--muted:#aaa;--line:#ffffff30;--glow:0 0 13px #f0001828}
+body{background:#030303}
+.topline{height:2px}
+.top-art{display:block;width:100%;max-width:1400px;height:auto;object-fit:contain;border-bottom:1px solid #282828}
+.header{position:relative;background:#050505;border-bottom:1px solid #242424}
+.nav{height:62px;grid-template-columns:165px minmax(180px,1fr) auto;gap:22px}
+.navleft{font-size:16px;gap:10px}
+.hamb{font-size:24px}
+.search{height:39px;border-radius:22px;background:#101010}
+.search input{font-size:13px}
+.search button{width:48px}
+.navactions{gap:18px}
+.navaction{font-size:13px}
+.navaction .ico{font-size:19px}
+.menu{top:62px}
+.hero-reference{border-bottom:1px solid #383838}
+.hero-reference>img{width:100%;max-width:1400px;height:auto;display:block;margin:0 auto}
+.hero-hotspot{left:73%;top:76%;width:24%;height:15%}
+.categories{margin:0 auto;border:1px solid #a90d18;border-radius:17px;background:linear-gradient(180deg,#0b0b0b,#030303);box-shadow:0 0 12px #ed001b25;grid-template-columns:repeat(8,minmax(0,1fr));padding:7px 9px;min-height:104px}
+.cat{min-width:0;min-height:87px;gap:7px;border-right:1px solid #292929;font-size:14px;line-height:1.05}
+.cat .symbol{font-family:"DM Sans";font-size:30px;color:#f5f5f5;text-shadow:0 0 7px #ed101c80}
+.cat:last-child{border-right:0}
+.cat:hover,.cat.active{color:#ff4b55;background:linear-gradient(180deg,#f0001810,transparent)}
+.benefits{padding:15px 0 27px;gap:12px}
+.benefit{height:68px;min-height:68px;border-radius:17px;border:1px solid #b90d18;background:#070707;box-shadow:0 0 10px #e9002022;padding:9px 13px;gap:11px}
+.benefit i{font-size:25px;color:#f21a27;text-shadow:0 0 8px #e0001b55}
+.benefit b{font-size:17px}.benefit small{font-size:11px}
+.section{padding:4px 0 34px;background:transparent}
+.sectionhead{position:relative;justify-content:center;margin:0 0 19px;min-height:46px}
+.sectiontitle{font-size:clamp(34px,4.2vw,54px);gap:8px}
+.crown{font-size:34px;color:#e7b928}
+.sectionhead .viewall{position:absolute;right:0;top:50%;transform:translateY(-50%);padding:7px 14px}
+.filters{display:none}
+.products{grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.product{border:1px solid #555;border-radius:14px;background:#050505;box-shadow:none}
+.product:hover{border-color:#c51b25;box-shadow:0 0 13px #f0001825;transform:translateY(-2px)}
+.photo{height:205px;background:#080808}
+.photo img{object-fit:cover}
+.tag{top:0;border-radius:0 0 10px 0}
+.heart{top:9px;right:9px}
+.pbody{padding:11px 10px 13px;background:#050505}
+.pbody h3{font-size:20px;min-height:42px;display:flex;align-items:center;justify-content:center}
+.pbody p{display:none}
+.price{font-size:27px;margin:3px 0 9px}
+.add{width:auto;min-width:68%;max-width:180px;padding:8px 14px;border-radius:20px}
+.promo{width:100%;min-height:190px;margin:0 auto 0;border-left:0;border-right:0;border-top:1px solid #343434;border-bottom:1px solid #343434;grid-template-columns:1fr 1.15fr .85fr;gap:16px;padding:12px max(24px,calc((100% - 1320px)/2));background:radial-gradient(ellipse at 10% 55%,#b5001c32,transparent 38%),linear-gradient(100deg,#050505,#0b0708,#030303)}
+.promo-character{height:165px}
+.promo-character img{height:195px;object-fit:contain}
+.promo-brand{width:130px;height:52px;object-fit:contain}
+.promo-copy h2{font-size:clamp(31px,4vw,48px)}
+.promo-copy p{font-size:14px}
+.promo-stamp{padding:15px 10px;background:#eee;color:#090909;clip-path:polygon(4% 0,96% 3%,100% 95%,5% 100%,0 8%);font-size:22px}
+.promo-stamp span{font-size:26px;color:#d00019}
+.footer{padding:26px 0 14px;background:#030303;border-top:1px solid #292929}
+.footgrid{grid-template-columns:1.05fr .9fr 1.2fr 1.3fr;gap:22px}
+.footlogo{width:130px}
+.foot h4{font-size:17px}
+.foot p,.foot a{font-size:11px}
+.payments{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 0 12px}
+.payments span{font:900 italic 18px "DM Sans";color:#d6d6d6;border-bottom:2px solid #d71925;padding:3px 5px}
+.payments span:nth-child(2){color:#e5a52a}
+.payments span:nth-child(3){color:#fff}
+.payments span:nth-child(4){color:#2bbdb1}
+.social a{background:transparent;border:1px solid #555}
+.newsletter{border-radius:4px}
+.newsletter button{min-width:42px}
+.copyright{font-size:10px}
+@media(max-width:900px){
+.nav{grid-template-columns:auto minmax(120px,1fr) auto;gap:10px}
+.navactions{gap:10px}
+.categories{grid-template-columns:repeat(4,minmax(0,1fr))}
+.cat:nth-child(4){border-right:0}
+.cat:nth-child(-n+4){border-bottom:1px solid #292929}
+.products{grid-template-columns:repeat(2,minmax(0,1fr))}
+.promo{grid-template-columns:.8fr 1.2fr;padding:12px 18px}
+.footgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:600px){
+.wrap{width:calc(100% - 28px)}
+.top-art{width:100%;height:auto}
+.nav{height:58px;grid-template-columns:auto minmax(0,1fr) auto;gap:8px}
+.navleft{gap:5px}.navleft span:not(.hide){display:none}
+.search{height:36px}.search input{font-size:11px;padding:0 10px}.search button{width:38px}
+.navactions{gap:7px}.navaction{font-size:0}.navaction .ico{font-size:19px}
+.menu{top:58px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.hero-reference>img{width:100%;height:auto}
+.categories{grid-template-columns:repeat(4,minmax(0,1fr));padding:4px;border-radius:12px}
+.cat{min-height:69px;font-size:11px;gap:5px}
+.cat .symbol{font-size:24px}
+.cat:nth-child(4){border-right:0}
+.cat:nth-child(-n+4){border-bottom:1px solid #292929}
+.benefits{gap:7px;padding:11px 0 20px}
+.benefit{height:59px;min-height:59px;padding:6px 7px;gap:6px;border-radius:12px}
+.benefit i{font-size:20px}
+.benefit b{font-size:12px}.benefit small{font-size:9px}
+.sectionhead{min-height:39px;margin-bottom:15px}
+.sectiontitle{font-size:31px;gap:5px}
+.crown{font-size:23px}
+.sectionhead .viewall{font-size:10px;padding:6px 8px}
+.products{gap:9px}
+.photo{height:145px}
+.pbody{padding:9px 7px 10px}
+.pbody h3{font-size:17px;min-height:37px}
+.price{font-size:23px}
+.add{font-size:12px;padding:7px 10px;min-width:75%}
+.promo{grid-template-columns:.7fr 1.3fr;min-height:130px;gap:5px;padding:8px 10px}
+.promo-character{height:115px}
+.promo-character img{height:145px}
+.promo-brand{width:95px;height:38px}
+.promo-copy h2{font-size:28px}
+.promo-copy p{font-size:10px;margin:6px 0}
+.promo-stamp{display:none}
+.footgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.foot:first-child{grid-column:auto}
+.footlogo{width:105px}
+.foot h4{font-size:15px}
+.foot p,.foot a{font-size:10px}
+.payments{gap:4px}.payments span{font-size:13px}
+.copyright{font-size:9px;flex-direction:column}
+}
 </style></head>
 <body><div class="topline"></div>
 <img class="top-art" src="assets/cabecalho-superior.png" alt="Informações institucionais VG PUFF">
-<header class="header"><nav class="nav wrap"><div class="navleft"><button class="hamb" id="hamb" aria-label="Abrir menu">☰</button><span>CATEGORIAS</span><span style="color:var(--red)">⌄</span></div><form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="O que você está procurando?" aria-label="Buscar produtos"><button aria-label="Pesquisar">⌕</button></form><div class="navactions"><button class="navaction" id="accountBtn"><span class="ico">♙</span>Minha conta</button><button class="navaction" id="cartBtn"><span class="ico">🛒</span>Carrinho <span class="count" id="cartCount">0</span></button></div><div class="menu" id="menu"><a href="#inicio">Início</a><a href="#vitrine" data-menu-cat="Todos">Todos os produtos</a><a href="#vitrine" data-menu-cat="Roupas">Roupas</a><a href="#vitrine" data-menu-cat="Tênis">Tênis</a><a href="#vitrine" data-menu-cat="Acessórios">Acessórios</a></div></nav></header>
+<header class="header"><nav class="nav wrap"><div class="navleft"><button class="hamb" id="hamb" aria-label="Abrir menu">☰</button><span>CATEGORIAS</span><span style="color:var(--red)">⌄</span></div><form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="O que você está procurando?" aria-label="Buscar produtos"><button aria-label="Pesquisar">⌕</button></form><div class="navactions"><button class="navaction" id="accountBtn"><span class="ico">♙</span>Minha conta</button><button class="navaction" id="cartBtn"><span class="ico">🛒</span>Carrinho <span class="count" id="cartCount">0</span></button></div><div class="menu" id="menu"><a href="#inicio">Início</a><a href="#vitrine" data-menu-cat="Todos">Todos os produtos</a><a href="#vitrine" data-menu-cat="Roupas">Roupas</a><a href="#vitrine" data-menu-cat="Tênis">Tênis</a><a href="#vitrine" data-menu-cat="Acessórios">Acessórios</a><a href="#vitrine" data-menu-cat="Perfumes">Perfumes</a><a href="#contato">Atendimento</a></div></nav></header>
 <main id="inicio">
 <section class="hero hero-reference" aria-label="Destaques VG PUFF"><img src="assets/banner-principal.png" alt="VG PUFF — Mais que uma loja, um estilo de vida" fetchpriority="high"><a class="hero-hotspot" href="#vitrine" aria-label="Ver coleção VG PUFF"></a></section>
-<div class="wrap"><div class="categories" id="categories"><button class="cat active" data-cat="Todos"><span class="symbol">✧</span><span>VER TODOS</span></button><button class="cat" data-cat="Roupas"><span class="symbol">♧</span><span>ROUPAS<br>DE GRIFE</span></button><button class="cat" data-cat="Tênis"><span class="symbol">⌁</span><span>TÊNIS</span></button><button class="cat" data-cat="Bonés"><span class="symbol">◒</span><span>BONÉS</span></button><button class="cat" data-cat="Óculos"><span class="symbol">◎</span><span>ÓCULOS</span></button><button class="cat" data-cat="Acessórios"><span class="symbol">✚</span><span>ACESSÓRIOS</span></button></div>
+<div class="wrap"><div class="categories" id="categories"><button class="cat active" data-cat="Todos"><span class="symbol">⌂</span><span>INÍCIO</span></button><button class="cat" data-cat="Acessórios"><span class="symbol">♢</span><span>ACESSÓRIOS</span></button><button class="cat" data-cat="Roupas"><span class="symbol">♧</span><span>ROUPAS<br>DE GRIFE</span></button><button class="cat" data-cat="Tênis"><span class="symbol">⌁</span><span>TÊNIS</span></button><button class="cat" data-cat="Bonés"><span class="symbol">◒</span><span>BONÉS</span></button><button class="cat" data-cat="Óculos"><span class="symbol">◎</span><span>ÓCULOS</span></button><button class="cat" data-cat="Perfumes"><span class="symbol">♧</span><span>PERFUMES</span></button><button class="cat" id="moreCategories"><span class="symbol">＋</span><span>VER MAIS</span></button></div>
 <div class="benefits"><div class="benefit"><i>➤</i><span><b>Envio rápido</b><small>Para todo o Brasil</small></span></div><div class="benefit"><i>⬟</i><span><b>Compra segura</b><small>Seus dados protegidos</small></span></div><div class="benefit"><i>◉</i><span><b>Suporte especializado</b><small>Tire suas dúvidas</small></span></div><div class="benefit"><i>♔</i><span><b>Benefícios exclusivos</b><small>Em produtos selecionados</small></span></div></div></div>
-<section class="section" id="vitrine"><div class="wrap"><div class="sectionhead"><h2 class="sectiontitle"><span class="crown">♛</span>PRODUTOS EM <span>DESTAQUE</span></h2><button class="viewall" id="showAll">VER TODOS →</button></div><div class="filters" id="filters"><button class="filter active" data-cat="Todos">Todos</button><button class="filter" data-cat="Roupas">Roupas</button><button class="filter" data-cat="Tênis">Tênis</button><button class="filter" data-cat="Bonés">Bonés</button><button class="filter" data-cat="Óculos">Óculos</button><button class="filter" data-cat="Acessórios">Acessórios</button></div><div class="products" id="products"></div></div></section>
+<section class="section" id="vitrine"><div class="wrap"><div class="sectionhead"><h2 class="sectiontitle"><span class="crown">♛</span>PRODUTOS EM <span>DESTAQUE</span></h2><button class="viewall" id="showAll">VER TODOS →</button></div><div class="filters" id="filters"><button class="filter active" data-cat="Todos">Todos</button><button class="filter" data-cat="Roupas">Roupas</button><button class="filter" data-cat="Tênis">Tênis</button><button class="filter" data-cat="Bonés">Bonés</button><button class="filter" data-cat="Óculos">Óculos</button><button class="filter" data-cat="Acessórios">Acessórios</button><button class="filter" data-cat="Perfumes">Perfumes</button></div><div class="products" id="products"></div></div></section>
 <div class="wrap"><section class="promo"><div class="promo-character"><img src="assets/joão-frango.png" alt="Mascote VG PUFF"></div><div class="promo-copy"><img class="promo-brand" src="assets/vgpuff-logo.png" alt="VG PUFF"><h2>SEU ESTILO<br><span>FAZ A DIFERENÇA!</span></h2><p>Atitude em cada detalhe. Vista VG PUFF.</p></div><div class="promo-stamp">QUALIDADE<span>QUE IMPRESSIONA</span></div></section></div>
 </main>
-<footer class="footer"><div class="wrap"><div class="footgrid"><div class="foot"><img class="footlogo" src="assets/vgpuff-logo.png" alt="VG PUFF"><p>Mais que uma marca, um estilo de vida. Moda e acessórios com personalidade.</p></div><div class="foot"><h4>Links úteis</h4><a href="#inicio">Início</a><a href="#vitrine">Categorias</a><a href="#vitrine">Produtos em destaque</a><a href="#contato">Fale conosco</a></div><div class="foot"><h4>Atendimento</h4><p>Precisa de ajuda com um produto ou pedido? Entre em contato pelos canais oficiais da VG PUFF.</p><a href="#contato">Central de atendimento</a></div><div class="foot" id="contato"><h4>Siga-nos</h4><div class="social"><a href="#contato" aria-label="Instagram">◎</a><a href="#contato" aria-label="YouTube">▶</a></div><h4 style="margin-top:17px">Novidades e promoções</h4><form class="newsletter" id="newsletter"><input type="email" required placeholder="Seu e-mail aqui..." aria-label="Seu e-mail"><button aria-label="Cadastrar">➤</button></form></div></div><div class="copyright"><span>© 2026 VG PUFF — Todos os direitos reservados.</span><span>Compra consciente • Atendimento VG PUFF</span></div></div></footer>
+<footer class="footer"><div class="wrap"><div class="footgrid"><div class="foot"><img class="footlogo" src="assets/vgpuff-logo.png" alt="VG PUFF"><p>Mais que uma marca, um estilo de vida. Moda e acessórios com personalidade.</p></div><div class="foot"><h4>Links úteis</h4><a href="#inicio">Início</a><a href="#vitrine">Categorias</a><a href="#vitrine">Produtos em destaque</a><a href="#contato">Fale conosco</a></div><div class="foot"><h4>Formas de pagamento</h4><div class="payments" aria-label="Formas de pagamento"><span>VISA</span><span>●●</span><span>elo</span><span>PIX</span></div><p>Consulte as opções disponíveis no atendimento.</p></div><div class="foot" id="contato"><h4>Siga-nos</h4><div class="social"><a href="#contato" aria-label="Instagram">◎</a><a href="#contato" aria-label="YouTube">▶</a></div><h4 style="margin-top:17px">Novidades e promoções</h4><form class="newsletter" id="newsletter"><input type="email" required placeholder="Seu e-mail aqui..." aria-label="Seu e-mail"><button aria-label="Cadastrar">➤</button></form></div></div><div class="copyright"><span>© 2026 VG PUFF — Todos os direitos reservados.</span><span>Compra consciente • Atendimento VG PUFF</span></div></div></footer>
 <div class="overlay" id="overlay"></div><aside class="drawer" id="drawer" aria-label="Carrinho de compras"><div class="drawhead"><h2>Seu carrinho</h2><button class="close" id="closeCart" aria-label="Fechar">×</button></div><div class="cartitems" id="cartItems"></div><div class="cartfoot"><div class="total"><span>Total</span><span id="cartTotal">R$ 0,00</span></div><button class="checkout" id="checkout">Continuar pelo WhatsApp</button></div></aside><div class="toast" id="toast" role="status"></div>
 <script>
 const products=[
@@ -134,5 +256,5 @@ function renderCart(){const count=cart.reduce((n,i)=>n+i.qty,0),total=cart.reduc
 function setCategory(c){category=c;document.querySelectorAll("[data-cat]").forEach(b=>b.classList.toggle("active",b.dataset.cat===c));renderProducts()}
 function openCart(){$("drawer").classList.add("open");$("overlay").classList.add("show");document.body.classList.add("lock")}function closeCart(){$("drawer").classList.remove("open");$("overlay").classList.remove("show");document.body.classList.remove("lock")}
 document.addEventListener("click",e=>{const add=e.target.closest("[data-add]");if(add){const id=Number(add.dataset.add),found=cart.find(i=>i.id===id);found?found.qty++:cart.push({id,qty:1});saveCart();toast("Produto adicionado ao carrinho");return}const fav=e.target.closest("[data-fav]");if(fav){const id=Number(fav.dataset.fav);favorites=favorites.includes(id)?favorites.filter(x=>x!==id):[...favorites,id];localStorage.setItem("vgpuff-favs",JSON.stringify(favorites));renderProducts();toast(favorites.includes(id)?"Adicionado aos favoritos":"Removido dos favoritos");return}const q=e.target.closest("[data-qty]");if(q){const id=Number(q.dataset.qty),item=cart.find(i=>i.id===id);item.qty+=Number(q.dataset.delta);if(item.qty<1)cart=cart.filter(i=>i.id!==id);saveCart();return}const rem=e.target.closest("[data-remove]");if(rem){cart=cart.filter(i=>i.id!==Number(rem.dataset.remove));saveCart();return}const cat=e.target.closest("[data-cat]");if(cat){setCategory(cat.dataset.cat);return}const mc=e.target.closest("[data-menu-cat]");if(mc){setCategory(mc.dataset.menuCat);$("menu").classList.remove("open")}});
-$("searchForm").addEventListener("submit",e=>{e.preventDefault();query=$("searchInput").value.trim();renderProducts();$("vitrine").scrollIntoView({behavior:"smooth"})});$("searchInput").addEventListener("input",()=>{query=$("searchInput").value.trim();renderProducts()});$("hamb").addEventListener("click",()=>$("menu").classList.toggle("open"));$("cartBtn").addEventListener("click",openCart);$("closeCart").addEventListener("click",closeCart);$("overlay").addEventListener("click",closeCart);$("showAll").addEventListener("click",()=>{setCategory("Todos");$("searchInput").value="";query=""});$("accountBtn").addEventListener("click",()=>toast("Atendimento: informe o canal oficial da loja para configurar sua conta."));$("checkout").addEventListener("click",()=>{if(!cart.length){toast("Adicione produtos antes de continuar");return}const lines=cart.map(i=>{const p=products.find(x=>x.id===i.id);return i.qty+"x "+p.name+" — "+money(p.price*i.qty)}).join("%0A");const total=cart.reduce((n,i)=>n+products.find(p=>p.id===i.id).price*i.qty,0);const msg="Olá! Quero consultar meu pedido:%0A"+lines+"%0ATotal: "+money(total);window.open("https://wa.me/?text="+msg,"_blank","noopener")});$("newsletter").addEventListener("submit",e=>{e.preventDefault();toast("Cadastro recebido nesta demonstração. Configure um serviço de e-mail para armazenar contatos.");e.target.reset()});renderProducts();renderCart();
+$("searchForm").addEventListener("submit",e=>{e.preventDefault();query=$("searchInput").value.trim();renderProducts();$("vitrine").scrollIntoView({behavior:"smooth"})});$("searchInput").addEventListener("input",()=>{query=$("searchInput").value.trim();renderProducts()});$("hamb").addEventListener("click",()=>$("menu").classList.toggle("open"));$("moreCategories").addEventListener("click",()=>$("menu").classList.toggle("open"));$("cartBtn").addEventListener("click",openCart);$("closeCart").addEventListener("click",closeCart);$("overlay").addEventListener("click",closeCart);$("showAll").addEventListener("click",()=>{setCategory("Todos");$("searchInput").value="";query=""});$("accountBtn").addEventListener("click",()=>toast("Atendimento: informe o canal oficial da loja para configurar sua conta."));$("checkout").addEventListener("click",()=>{if(!cart.length){toast("Adicione produtos antes de continuar");return}const lines=cart.map(i=>{const p=products.find(x=>x.id===i.id);return i.qty+"x "+p.name+" — "+money(p.price*i.qty)}).join("%0A");const total=cart.reduce((n,i)=>n+products.find(p=>p.id===i.id).price*i.qty,0);const msg="Olá! Quero consultar meu pedido:%0A"+lines+"%0ATotal: "+money(total);window.open("https://wa.me/?text="+msg,"_blank","noopener")});$("newsletter").addEventListener("submit",e=>{e.preventDefault();toast("Cadastro recebido nesta demonstração. Configure um serviço de e-mail para armazenar contatos.");e.target.reset()});renderProducts();renderCart();
 </script></body></html>
