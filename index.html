@@ -16,16 +16,102 @@
 @media(max-width:900px){.wrap{width:calc(100% - 30px)}.nav{grid-template-columns:auto minmax(100px,1fr) auto;gap:10px}.brand img{width:105px}.navleft span:not(.hide){display:none}.navactions{gap:10px}.navaction{font-size:0}.navaction .ico{font-size:21px}.menu{grid-template-columns:repeat(2,1fr)}.hero-inner{grid-template-columns:1fr;gap:0;padding:38px 0}.hero-copy{text-align:center}.hero-copy p{margin:0 auto}.hero-mark{min-height:230px}.hero-mark img{max-height:130px}.hero-mark strong{font-size:60px}.categories{grid-template-columns:repeat(3,1fr)}.cat{min-height:72px}.cat:nth-child(3){border-right:0}.cat:nth-child(-n+3){border-bottom:1px solid #ffffff17}.benefits{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.photo{height:175px}.footgrid{grid-template-columns:1fr 1fr}.foot:first-child{grid-column:1/-1}.promo{grid-template-columns:.7fr 1.3fr;padding:14px}.promo-stamp{display:none}}
 @media(max-width:480px){.top-art{width:100%}.nav{height:58px}.brand img{width:88px}.navleft{gap:5px}.search{height:36px}.search input{padding:0 10px;font-size:11px}.search button{width:38px}.navactions{gap:6px}.navaction .ico{font-size:18px}.hero h1{font-size:84px}.hero-inner{padding:35px 0 20px}.hero-mark{min-height:190px}.hero-mark strong{font-size:52px}.categories{padding:5px}.cat{font-size:12px;min-height:68px}.cat .symbol{font-size:23px}.benefits{gap:7px}.benefit{padding:8px;min-height:62px;gap:8px}.benefit i{font-size:21px}.benefit b{font-size:13px}.benefit small{font-size:9px}.section{padding:26px 0 35px}.sectionhead{align-items:flex-start}.sectiontitle{font-size:35px}.crown{font-size:25px}.viewall{font-size:11px;padding:7px 10px}.photo{height:140px}.pbody{padding:10px 8px 12px}.pbody h3{font-size:18px}.price{font-size:23px}.add{font-size:12px}.promo{grid-template-columns:1fr;padding:20px 12px;gap:8px;text-align:center}.promo-logo img{width:115px}.promo-copy h2{font-size:43px}.footgrid{grid-template-columns:1fr 1fr;gap:17px}.copyright{flex-direction:column}.menu{top:58px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-.hero-reference{position:relative;width:100%;background:#000;overflow:hidden;border-bottom:1px solid #ffffff45;line-height:0}.hero-reference>img{display:block;width:100%;max-width:1400px;height:auto;margin:0 auto}.hero-hotspot{position:absolute;left:73%;top:76%;width:24%;height:15%;border-radius:40px;cursor:pointer}.hero-hotspot:focus-visible{outline:3px solid white;outline-offset:3px}</style></head>
+.hero-reference{position:relative;width:100%;background:#000;overflow:hidden;border-bottom:1px solid #ffffff45;line-height:0}.hero-reference>img{display:block;width:100%;max-width:1400px;height:auto;margin:0 auto}.hero-hotspot{position:absolute;left:73%;top:76%;width:24%;height:15%;border-radius:40px;cursor:pointer}.hero-hotspot:focus-visible{outline:3px solid white;outline-offset:3px}
+/* Refinamento visual baseado na referência enviada */
+body{background:#030303}
+.top-art{width:100%;max-width:none;max-height:none;object-fit:cover}
+.nav{grid-template-columns:165px minmax(220px,1fr) auto;max-width:1400px}
+.navleft{font-size:17px}
+.search{height:40px;border-radius:24px}
+.search button{width:48px}
+.hero-reference{background:#000}
+.hero-reference>img{width:100%;max-width:none}
+.categories{margin-top:-2px;min-height:104px;border-radius:18px;background:linear-gradient(180deg,#090909,#020202);border-color:#a91b24;box-shadow:0 0 20px #e0002438;padding:7px 10px}
+.cat{font-size:15px;letter-spacing:.15px;line-height:1.05;min-height:88px;gap:5px;border-right:1px solid #ffffff22}
+.cat .symbol{font-size:32px;color:#fff;text-shadow:0 0 4px #fff,0 0 12px #f00,0 0 20px #e00025;line-height:1}
+.cat:hover,.cat.active{color:#ff4c55;background:radial-gradient(ellipse at center,#f0001820,transparent 70%)}
+.benefits{padding:15px 0 28px;gap:13px}
+.benefit{min-height:68px;border-radius:18px;border-color:#d10a18;background:linear-gradient(100deg,#160507,#050505 75%);box-shadow:0 0 14px #e900252b,inset 0 0 10px #f0001410;padding:9px 14px}
+.benefit i{width:36px;min-width:36px;height:36px;display:grid;place-items:center;border-radius:50%;font-size:25px;color:#ff202d;text-shadow:0 0 13px #f00}
+.benefit b{font-size:18px}.benefit small{font-size:12px}
+.section{padding:5px 0 38px;background:radial-gradient(ellipse at 50% 0%,#ffffff0a,transparent 55%)}
+.sectionhead{justify-content:center;position:relative;margin:0 0 22px}
+.sectiontitle{font-size:clamp(38px,4.6vw,58px);gap:9px}
+.sectionhead .viewall{position:absolute;right:0;top:50%;transform:translateY(-50%);border-radius:20px;padding:8px 16px}
+.filters{justify-content:center;margin:0 0 17px}
+.products{gap:16px}
+.product{border-radius:15px;border-color:#777;background:linear-gradient(180deg,#111,#030303);box-shadow:0 7px 18px #000}
+.product:hover{border-color:#ed1724;box-shadow:0 0 18px #f0002450,0 8px 22px #000}
+.photo{height:205px;background:radial-gradient(ellipse at 50% 80%,#650b13,#090909 72%)}
+.photo img{object-fit:cover}
+.pbody{padding:12px 13px 14px;background:linear-gradient(180deg,#050505,#090909)}
+.pbody h3{font-size:22px}.price{font-size:29px}
+.add{max-width:180px;border-radius:22px;padding:8px 12px;box-shadow:0 0 12px #e0002530}
+.promo{min-height:190px;margin-bottom:0;border:0;border-top:1px solid #501018;border-bottom:1px solid #501018;grid-template-columns:1fr 1.15fr .85fr;padding:12px 24px;background:radial-gradient(ellipse at 12% 55%,#bd001d60,transparent 40%),radial-gradient(ellipse at 85% 40%,#ffffff14,transparent 35%),linear-gradient(100deg,#080808,#120508,#030303);position:relative}
+.promo-character{height:165px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.promo-character img{height:210px;width:100%;object-fit:contain;object-position:center;filter:drop-shadow(0 0 15px #e0002440)}
+.promo-logo{display:none}
+.promo-copy{text-align:center}
+.promo-brand{width:145px;height:60px;object-fit:contain;margin:0 auto 7px}
+.promo-copy h2{font-size:clamp(30px,4vw,49px)}
+.promo-copy p{font-size:15px;margin-bottom:0}
+.promo-stamp{padding:18px 12px;background:#eee;color:#080808;clip-path:polygon(4% 0,96% 3%,100% 95%,5% 100%,0 8%);font-size:24px}
+.promo-stamp span{font-size:29px;color:#d00019}
+.footer{padding-top:27px}
+.footgrid{grid-template-columns:1fr 1fr 1.4fr 1.3fr;gap:28px}
+.foot h4{font-size:19px}
+.footlogo{width:150px}
+@media(max-width:900px){
+.nav{grid-template-columns:auto minmax(100px,1fr) auto}
+.top-art{object-fit:contain}
+.categories{min-height:0}
+.cat{min-height:77px}
+.sectionhead{justify-content:center}
+.sectionhead .viewall{right:0}
+.promo{grid-template-columns:.75fr 1.3fr;padding:12px}
+.promo-stamp{display:block}
+.footgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+.nav{grid-template-columns:auto minmax(90px,1fr) auto}
+.navleft span:not(.hide){display:none}
+.top-art{width:100%;height:auto}
+.hero-reference>img{width:100%;height:auto}
+.categories{grid-template-columns:repeat(3,1fr);padding:5px}
+.cat{min-height:73px;font-size:12px}
+.cat .symbol{font-size:26px}
+.cat:nth-child(3){border-right:0}
+.benefits{gap:8px;padding:12px 0 22px}
+.benefit{min-height:61px;padding:7px 8px;gap:6px}
+.benefit i{width:28px;min-width:28px;height:28px;font-size:20px}
+.benefit b{font-size:13px}.benefit small{font-size:9px}
+.sectionhead{margin-bottom:17px}
+.sectiontitle{font-size:33px}
+.sectionhead .viewall{position:static;transform:none;font-size:10px;padding:6px 9px;white-space:nowrap}
+.products{gap:9px}
+.photo{height:150px}
+.pbody h3{font-size:18px}
+.price{font-size:23px}
+.add{font-size:12px}
+.promo{grid-template-columns:.75fr 1.25fr;gap:7px;min-height:140px;padding:8px}
+.promo-character{height:120px}
+.promo-character img{height:150px}
+.promo-brand{width:110px;height:42px}
+.promo-copy h2{font-size:31px}
+.promo-copy p{font-size:11px}
+.promo-stamp{display:none}
+.footgrid{grid-template-columns:1fr 1fr;gap:16px}
+}
+</style></head>
 <body><div class="topline"></div>
 <img class="top-art" src="assets/cabecalho-superior.png" alt="Informações institucionais VG PUFF">
 <header class="header"><nav class="nav wrap"><div class="navleft"><button class="hamb" id="hamb" aria-label="Abrir menu">☰</button><span>CATEGORIAS</span><span style="color:var(--red)">⌄</span></div><form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="O que você está procurando?" aria-label="Buscar produtos"><button aria-label="Pesquisar">⌕</button></form><div class="navactions"><button class="navaction" id="accountBtn"><span class="ico">♙</span>Minha conta</button><button class="navaction" id="cartBtn"><span class="ico">🛒</span>Carrinho <span class="count" id="cartCount">0</span></button></div><div class="menu" id="menu"><a href="#inicio">Início</a><a href="#vitrine" data-menu-cat="Todos">Todos os produtos</a><a href="#vitrine" data-menu-cat="Roupas">Roupas</a><a href="#vitrine" data-menu-cat="Tênis">Tênis</a><a href="#vitrine" data-menu-cat="Acessórios">Acessórios</a></div></nav></header>
 <main id="inicio">
 <section class="hero hero-reference" aria-label="Destaques VG PUFF"><img src="assets/banner-principal.png" alt="VG PUFF — Mais que uma loja, um estilo de vida" fetchpriority="high"><a class="hero-hotspot" href="#vitrine" aria-label="Ver coleção VG PUFF"></a></section>
-<div class="wrap"><div class="categories" id="categories"><button class="cat active" data-cat="Todos"><span class="symbol">✦</span>Todos</button><button class="cat" data-cat="Roupas"><span class="symbol">♧</span>Roupas</button><button class="cat" data-cat="Tênis"><span class="symbol">♟</span>Tênis</button><button class="cat" data-cat="Bonés"><span class="symbol">⌂</span>Bonés</button><button class="cat" data-cat="Óculos"><span class="symbol">◎</span>Óculos</button><button class="cat" data-cat="Acessórios"><span class="symbol">＋</span>Acessórios</button></div>
-<div class="benefits"><div class="benefit"><i>🚀</i><span><b>Envio rápido</b><small>Para todo o Brasil</small></span></div><div class="benefit"><i>♢</i><span><b>Compra segura</b><small>Seus dados protegidos</small></span></div><div class="benefit"><i>☏</i><span><b>Suporte especializado</b><small>Tire suas dúvidas</small></span></div><div class="benefit"><i>🎁</i><span><b>Benefícios exclusivos</b><small>Novidades e vantagens</small></span></div></div></div>
+<div class="wrap"><div class="categories" id="categories"><button class="cat active" data-cat="Todos"><span class="symbol">✧</span><span>VER TODOS</span></button><button class="cat" data-cat="Roupas"><span class="symbol">♧</span><span>ROUPAS<br>DE GRIFE</span></button><button class="cat" data-cat="Tênis"><span class="symbol">⌁</span><span>TÊNIS</span></button><button class="cat" data-cat="Bonés"><span class="symbol">◒</span><span>BONÉS</span></button><button class="cat" data-cat="Óculos"><span class="symbol">◎</span><span>ÓCULOS</span></button><button class="cat" data-cat="Acessórios"><span class="symbol">✚</span><span>ACESSÓRIOS</span></button></div>
+<div class="benefits"><div class="benefit"><i>➤</i><span><b>Envio rápido</b><small>Para todo o Brasil</small></span></div><div class="benefit"><i>⬟</i><span><b>Compra segura</b><small>Seus dados protegidos</small></span></div><div class="benefit"><i>◉</i><span><b>Suporte especializado</b><small>Tire suas dúvidas</small></span></div><div class="benefit"><i>♔</i><span><b>Benefícios exclusivos</b><small>Em produtos selecionados</small></span></div></div></div>
 <section class="section" id="vitrine"><div class="wrap"><div class="sectionhead"><h2 class="sectiontitle"><span class="crown">♛</span>PRODUTOS EM <span>DESTAQUE</span></h2><button class="viewall" id="showAll">VER TODOS →</button></div><div class="filters" id="filters"><button class="filter active" data-cat="Todos">Todos</button><button class="filter" data-cat="Roupas">Roupas</button><button class="filter" data-cat="Tênis">Tênis</button><button class="filter" data-cat="Bonés">Bonés</button><button class="filter" data-cat="Óculos">Óculos</button><button class="filter" data-cat="Acessórios">Acessórios</button></div><div class="products" id="products"></div></div></section>
-<div class="wrap"><section class="promo"><div class="promo-logo"><img src="assets/vgpuff-logo.png" alt="VG PUFF"></div><div class="promo-copy"><h2>VG PUFF.<br><span>VISTA SUA ATITUDE!</span></h2><p>Seu estilo. Sua identidade. Sua presença.</p></div><div class="promo-stamp">ESTILO<span>ORIGINAL</span></div></section></div>
+<div class="wrap"><section class="promo"><div class="promo-character"><img src="assets/joão-frango.png" alt="Mascote VG PUFF"></div><div class="promo-copy"><img class="promo-brand" src="assets/vgpuff-logo.png" alt="VG PUFF"><h2>SEU ESTILO<br><span>FAZ A DIFERENÇA!</span></h2><p>Atitude em cada detalhe. Vista VG PUFF.</p></div><div class="promo-stamp">QUALIDADE<span>QUE IMPRESSIONA</span></div></section></div>
 </main>
 <footer class="footer"><div class="wrap"><div class="footgrid"><div class="foot"><img class="footlogo" src="assets/vgpuff-logo.png" alt="VG PUFF"><p>Mais que uma marca, um estilo de vida. Moda e acessórios com personalidade.</p></div><div class="foot"><h4>Links úteis</h4><a href="#inicio">Início</a><a href="#vitrine">Categorias</a><a href="#vitrine">Produtos em destaque</a><a href="#contato">Fale conosco</a></div><div class="foot"><h4>Atendimento</h4><p>Precisa de ajuda com um produto ou pedido? Entre em contato pelos canais oficiais da VG PUFF.</p><a href="#contato">Central de atendimento</a></div><div class="foot" id="contato"><h4>Siga-nos</h4><div class="social"><a href="#contato" aria-label="Instagram">◎</a><a href="#contato" aria-label="YouTube">▶</a></div><h4 style="margin-top:17px">Novidades e promoções</h4><form class="newsletter" id="newsletter"><input type="email" required placeholder="Seu e-mail aqui..." aria-label="Seu e-mail"><button aria-label="Cadastrar">➤</button></form></div></div><div class="copyright"><span>© 2026 VG PUFF — Todos os direitos reservados.</span><span>Compra consciente • Atendimento VG PUFF</span></div></div></footer>
 <div class="overlay" id="overlay"></div><aside class="drawer" id="drawer" aria-label="Carrinho de compras"><div class="drawhead"><h2>Seu carrinho</h2><button class="close" id="closeCart" aria-label="Fechar">×</button></div><div class="cartitems" id="cartItems"></div><div class="cartfoot"><div class="total"><span>Total</span><span id="cartTotal">R$ 0,00</span></div><button class="checkout" id="checkout">Continuar pelo WhatsApp</button></div></aside><div class="toast" id="toast" role="status"></div>
